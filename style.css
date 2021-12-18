@@ -190,11 +190,11 @@ i {
 }
 
 .main_text--list-items {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
-ul li.active {
-    color: #222 !important;
+.text-items a .active {
+  color: #222 !important;
 }
 
 .text-items {
@@ -241,12 +241,12 @@ ul li.active {
   color: #f59019;
 }
 
-<!---business--- > .container1 {
-  max-width: 1170px;
-  margin: auto;
-  height: 437px;
+/* Business Section: start */
+section.business__section {
+  margin: 100px 0;
 }
-.container1 .row {
+
+.row {
   width: 85%;
   margin: auto;
 }
@@ -260,7 +260,7 @@ ul li.active {
   background-color: rgba(39, 89, 171, 1);
   width: 370px;
   height: 437px;
-  border: 2px solid rgba(235, 235, 235, 1);
+  border: 1px solid rgba(235, 235, 235, 1);
   box-sizing: border-box;
 }
 .content .card1 img {
@@ -282,8 +282,9 @@ ul li.active {
   background-color: #fff;
   width: 370px;
   height: 437px;
-  border: 2px solid rgba(235, 235, 235, 1);
+  border: 1px solid rgba(235, 235, 235, 1);
   box-sizing: border-box;
+  margin: 0 10px;
 }
 .content .card2 img {
   width: 365px;
@@ -306,7 +307,7 @@ ul li.active {
   background-color: #fff;
   width: 370px;
   height: 437px;
-  border: 2px solid rgba(235, 235, 235, 1);
+  border: 1px solid rgba(235, 235, 235, 1);
   box-sizing: border-box;
 }
 .content .card3 img {
@@ -326,14 +327,47 @@ ul li.active {
   text-align: center;
   color: black;
 }
-/*------testimonials------*/
 
-.testimonials {
-  width: 80%;
-  margin: auto;
-  padding-top: 100px;
-  text-align: center;
+/* Business Section: end */
+
+/*------testimonials: Start------*/
+
+section.testimonials {
+  width: 100%;
 }
+
+.testimonials__header {
+  margin: 30px 0;
+}
+
+.testimonials__header-text {
+  font-family: Nunito-SemiBold;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 200px;
+  bottom: 20px;
+}
+
+.header__text--one {
+  color: rgba(245, 144, 25, 1);
+}
+.header__text--two {
+  color: #2759ab;
+}
+.testimonials__line {
+  margin: 10px 0;
+}
+.testimonials__line hr {
+  background-color: rgba(245, 144, 25, 1);
+  width: 56px;
+  height: 3px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
 .testimonial-col1 {
   background-color: rgba(39, 89, 171, 1);
   flex-basis: 31%;
@@ -360,32 +394,88 @@ ul li.active {
   border-radius: 50%;
 }
 
-.testimonials h1 {
-  line-height: 50px;
-  text-align: center;
-  font-family: Nunito-SemiBold;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  color: rgba(245, 144, 25, 1);
+.testimonial__card-1 {
+  width: 50%;
 }
-.testimonials h2 {
-  line-height: 50px;
-  text-align: center;
-  font-family: Nunito-SemiBold;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  color: #2759ab;
+
+.testimonial__card-1 {
+  width: 50%;
 }
-.testimonials hr {
-  background-color: rgba(245, 144, 25, 1);
-  width: 56px;
-  height: 3px;
+
+.profile {
+  background: #ffffff;
+  border-radius: 0 0 25px 0;
+  margin-top: 40px;
+  padding: 28px 30px 30px 35px;
+  position: relative;
+  color: #e3e0e0;
+}
+
+.testimonials__body--profiles {
+  margin: 60px auto;
+}
+
+.profile-1 {
+  margin-right: 20px;
+}
+
+.profile__body {
+  padding: 15px 10px;
+}
+
+.profile-bg-blue {
+  background-color: #2759ab;
+}
+
+.profile-bg-orange {
+  background-color: #f59019;
+}
+
+.profile__header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profile__picture {
+  background: #ffffff;
+  border-radius: 100px;
+  height: 60px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  top: -30px;
+  width: 60px;
+  left: 0px;
 }
+.profile__picture:before {
+  border-radius: 100px;
+  content: "";
+  height: calc(100% + 20px);
+  left: -10px;
+  position: absolute;
+  top: -10px;
+  width: calc(100% + 20px);
+  z-index: -1;
+}
+.profile__picture img {
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.profile__stats {
+  display: flex;
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > .profile-pic {
+  width: 50%;
+}
+
+/*------testimonials: End------*/
 
 /*-------Start--------*/
 .start {
@@ -425,23 +515,28 @@ ul li.active {
 
 /*------Subscribe---------*/
 .subscribe {
-  width: 1170px;
-  height: 74px;
-  left: 376px;
-  margin-bottom: 10px;
   text-align: center;
+  margin: 60px 0;
 }
-.subscribe ul li {
-  float: none;
-  display: inline-block;
+
+.flex-container > .side {
+  width: 50%;
 }
-.subscribe ul li:nth-child(1) {
-  font-size: 35px;
-  font-family: Nunito-SemiBold;
-  font-style: normal;
-  font-weight: normal;
-  color: rgba(50, 50, 50, 1);
-  padding: 20px;
+
+.left__side {
+  text-align: right;
+}
+.subscribe__text {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.custom__input {
+  padding: 15px;
+  border-radius: 0 0 25px 0;
+  border: #e3e0e0 2px solid;
+  width: 60%;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
 }
 
 /*------Footer--------*/
@@ -487,7 +582,14 @@ ul {
 .footer-col p {
   margin-top: 20px;
   color: #fff;
-  font-family: Nunito-Regular;
   font-weight: normal;
   font-size: 16px;
+}
+
+.flex-container > .footer-col-1 {
+  width: 40%;
+}
+
+.flex-container > .footer-col {
+  width: 25%;
 }
