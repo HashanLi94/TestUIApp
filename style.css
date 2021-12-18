@@ -206,18 +206,14 @@ i {
   line-height: 50px;
   text-decoration: none;
   font-size: 18px;
-  font-family: SourceSansPro-Regular;
   color: rgba(255, 255, 255, 1);
 }
-.text-items a .active {
-  color: #f59019;
-}
+
 .text-items:nth-child(1) {
   margin-right: auto;
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 18px;
-  font-family: SourceSansPro-Regular;
   font-style: normal;
   font-weight: normal;
   color: rgba(255, 255, 255, 1);
@@ -226,7 +222,6 @@ i {
   margin-right: auto;
   margin-right: 1rem;
   font-size: 18px;
-  font-family: SourceSansPro-Regular;
   font-style: normal;
   font-weight: normal;
   color: rgba(255, 255, 255, 1);
@@ -235,9 +230,12 @@ i {
   margin-right: auto;
   margin-right: 1rem;
   font-size: 18px;
-  font-family: SourceSansPro-Regular;
   font-style: normal;
   font-weight: normal;
+  color: #f59019;
+}
+
+#active {
   color: #f59019;
 }
 
@@ -262,6 +260,7 @@ section.business__section {
   height: 437px;
   border: 1px solid rgba(235, 235, 235, 1);
   box-sizing: border-box;
+  color: #e3e0e0;
 }
 .content .card1 img {
   width: 365px;
@@ -337,11 +336,12 @@ section.testimonials {
 }
 
 .testimonials__header {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .testimonials__header-text {
-  font-family: Nunito-SemiBold;
+  /* font-family: Nunito-SemiBold; */
   line-height: 50px;
   text-align: center;
   font-size: 25px;
@@ -357,7 +357,7 @@ section.testimonials {
   color: #2759ab;
 }
 .testimonials__line {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .testimonials__line hr {
   background-color: rgba(245, 144, 25, 1);
@@ -392,10 +392,6 @@ section.testimonials {
   width: 67px;
   margin-left: 0px;
   border-radius: 50%;
-}
-
-.testimonial__card-1 {
-  width: 50%;
 }
 
 .testimonial__card-1 {
@@ -486,14 +482,14 @@ section.testimonials {
   padding: 100px 0;
 }
 .start h1 {
-  font-family: Nunito-SemiBold;
+  /* font-family: Nunito-SemiBold; */
   font-size: 53px;
   color: rgba(245, 144, 25, 1);
   text-align: center;
   margin-bottom: 40px;
 }
 .start h2 {
-  font-family: Nunito-SemiBold;
+  /* font-family: Nunito-SemiBold; */
   font-size: 19px;
   color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -501,7 +497,7 @@ section.testimonials {
   line-height: 30px;
 }
 .btn-second {
-  font-family: Nunito-SemiBold;
+  /* font-family: Nunito-SemiBold; */
   font-size: 18px;
   font-style: normal;
   font-weight: normal;
@@ -510,7 +506,7 @@ section.testimonials {
   border: none;
   outline: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 
 /*------Subscribe---------*/
