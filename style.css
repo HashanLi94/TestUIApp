@@ -245,10 +245,6 @@ section.business__section {
   margin: 100px 0;
 }
 
-.row {
-  width: 85%;
-  margin: auto;
-}
 .content {
   display: flex;
   justify-content: center;
@@ -258,15 +254,14 @@ section.business__section {
 
 .card-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .card {
-  width: 30%;
-  justify-content: space-between;
+  width: 32%;
   height: 100%;
   border: 1px solid rgba(235, 235, 235, 1);
   box-sizing: border-box;
-  margin-right: 10px;
   text-align: center;
 }
 .card .card1 {
@@ -294,6 +289,9 @@ section.business__section {
 }
 
 .card2 h1 {
+  color: rgba(245, 144, 25, 1);
+}
+.card3 h1 {
   color: rgba(245, 144, 25, 1);
 }
 .content .card2 p {
@@ -339,36 +337,6 @@ section.testimonials {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-}
-
-.testimonial-col1 {
-  background-color: rgba(39, 89, 171, 1);
-  flex-basis: 31%;
-  margin-bottom: 5%;
-  box-sizing: border-box;
-  width: 370px;
-  height: 437px;
-  text-align: left;
-  border: 2px solid rgba(235, 235, 235, 1);
-}
-.testimonial-col1 upper {
-  height: 80px;
-  background: #fff;
-}
-.testimonial-col1 lower {
-  height: 265px;
-  background: #000;
-}
-
-.testimonial-col1 img {
-  height: 67px;
-  width: 67px;
-  margin-left: 0px;
-  border-radius: 50%;
-}
-
-.testimonial__card-1 {
-  width: 50%;
 }
 
 .profile {
@@ -438,6 +406,7 @@ section.testimonials {
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .flex-container > .profile-pic {
@@ -527,6 +496,7 @@ ul {
   margin-bottom: 20px;
   font-weight: normal;
 }
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -536,6 +506,9 @@ ul {
   text-decoration: none;
   display: block;
   font-weight: normal;
+}
+.footer-col ul li a:hover {
+  color: #fff;
 }
 .footer-col .social a {
   display: inline-block;
@@ -548,6 +521,7 @@ ul {
   color: #fff;
   margin-top: 40px;
 }
+
 .footer-col p {
   margin-top: 20px;
   color: #fff;
