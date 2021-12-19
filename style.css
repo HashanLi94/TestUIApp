@@ -558,3 +558,12 @@ ul {
 .flex-container > .footer-col {
   width: 25%;
 }
+
+a.social-icon:hover {
+  transform: rotate(45deg);
+  background-color: #2759ab;
+}
+
+a.social-icon i:hover {
+  transform: rotate(-45deg);
+}
