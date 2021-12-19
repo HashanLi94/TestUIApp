@@ -511,12 +511,13 @@ input {
     padding-right: 35px !important;
 }
 .right-inner-addon i {
-  color: #222;
+  color: #2759ab;
   position: absolute;
   right: 120px;
   padding: 12px 12px;
   pointer-events: none;
-  top: 5px;
+  top: -5px;
+  font-size: 35px;
 }
 
 
@@ -558,11 +559,11 @@ ul {
   height: 40px;
   width: 40px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
   text-align: center;
-  line-height: 40px;
   color: #fff;
   margin-top: 40px;
+  transform: rotate(45deg);
+  margin-right: 35px;
 }
 
 .footer-col-1 p {
@@ -573,7 +574,7 @@ ul {
 }
 
 .flex-container > .footer-col-1 {
-  width: 40%;
+  width: 55%;
 }
 
 .flex-container > .footer-col {
@@ -581,11 +582,10 @@ ul {
 }
 
 a.social-icon:hover {
-  transform: rotate(45deg);
   background-color: #2759ab;
 }
 
-a.social-icon i:hover {
+a.social-icon i {
   transform: rotate(-45deg);
 }
 
