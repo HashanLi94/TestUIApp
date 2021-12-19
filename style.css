@@ -493,11 +493,32 @@ section.testimonials {
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
 }
 
-.side img{
-  position: absolute;
-  right: 210px;
-  top: 332%;
+.input-container {
+	padding-bottom: 1em;
 }
+
+input {
+  width: 100%;
+  padding: 1em !important;
+  margin: 0em !important;
+  box-sizing: border-box;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 35px !important;
+}
+.right-inner-addon i {
+  color: #222;
+  position: absolute;
+  right: 120px;
+  padding: 12px 12px;
+  pointer-events: none;
+  top: 5px;
+}
+
 
 /*------Footer--------*/
 
@@ -567,3 +588,7 @@ a.social-icon:hover {
 a.social-icon i:hover {
   transform: rotate(-45deg);
 }
+
+
+
+
